@@ -1,0 +1,245 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ...................................................... */
+/* custom styles */
+header {
+    background-color: white;
+    padding: 20px;
+}
+.heading h1 {
+    color: rgb(45,38,64);
+    font-size: 35px;
+    letter-spacing: -2px;
+    font-weight: 550;
+    font-family: 'DM Serif Display', serif;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+nav {
+    margin-left: 700px;
+
+}
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: rgb(145,143,149);
+}
+.viewplans{
+    border: 2px solid rgb(188,188,188);
+    padding: 10px;
+    border-radius: 5px;
+}
+.container {
+    margin: 0  auto;
+    width: 1230px;
+}
+/* ................................................ */
+/* body */
+
+.hr {
+    padding-top: 60px;
+    width: 140px;
+    margin-bottom: 40px;
+    margin-left: 160px;
+    
+}
+.section-1 {
+    background-color: rgb(45,38,64);
+    color: white;
+    height: 400px;
+}
+.sub-heading h2 {
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'DM Serif Display', serif;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+.sub-heading p{
+    color: rgb(146,143,154);
+    margin-bottom: 40px;
+    width: 600px;
+}
+.viewplans-2{
+    border: 2px solid rgb(149,145,158);
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.image-1 img {
+    position: absolute;
+    top: 140px;
+    left: 900px;
+}
+
+/* .................................... */
+/* section-2 */
+nav a {
+    text-decoration: none;
+    color: rgb(141,139,146);
+}
+.leaving-space{
+    height: 300px;
+}
+.kmowmore{
+    border:2px solid rgb(215,215,217);
+    padding: 10px;
+    color: rgb(142,139,147);
+    text-decoration: none;
+}
+.section-2-info{
+    margin-top: 150px;
+    margin-left: 150px;
+    width: 600px;
+    height: 250px;
+}
+.section-2-info h2 {
+    color: rgb(1,18,45);
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+.section-2-info p {
+    line-height: 1.5;
+    color: rgb(199,203,197);
+    margin-bottom: 40px;
+}
+.image-2 {
+    margin-bottom: 100px;
+}
+/* ....................................... */
+/* section-3 */
+.section-3-heading{
+    color: rgb(1,18,45);
+    font-size: 35px;
+    letter-spacing: -1.5px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.section-3-content h3 {
+    font-size: 25px;
+    color: rgb(6,23,49);
+    font-weight: bold;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+.section-3-content p {
+    color:rgb(107,106,113);
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+.size {
+    width: 350px;
+}
+.margin-1 {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.hr-2 {
+    width: 150px;
+    margin-left: 2px;
+    color: rgb(219,219,219);
+    margin-bottom: 30px;
+}
+/* ........................................ */
+.section-4 {
+    background-color: rgb(45,38,64);
+    height: 200px;
+    margin-bottom: 70px;
+}
+.section-4-h2{
+    width: 300px;
+    margin-left: 60px;
+    
+}
+.section-4-h2 h2 {
+    color: white;
+    font-size: 34px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.link-section-4{
+    margin-left: 500px;
+    border:2px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+.link-section-4 a {
+    text-decoration: none;
+    color: white;
+}
+/* .......................... */
+/* section-5 */
+.nav-last{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.nav-last a {
+    text-decoration: none;
+    color: rgb(176,175,179);
+    font-size: 24px;
+    margin-left: 30px;
+    font-weight: 400;
+}
+/* .................................... */
+/* footer */
+.footer {
+    background-color: rgb(45,38,64);
+    padding: 30px;
+    text-align: center;
+}
+small{
+    color: rgb(140,143,163);
+}
