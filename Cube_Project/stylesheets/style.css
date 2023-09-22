@@ -1,0 +1,263 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.5;
+  background: -webkit-gradient(linear, left top, right top, from(#7070f3), to(lightblue));
+  background: linear-gradient(to right, #7070f3, lightblue);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 5rem auto;
+  padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.spin {
+  cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.spin:hover {
+  -webkit-animation: spin 5s linear infinite;
+          animation: spin 5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.cube {
+  position: relative;
+  width: 95px;
+}
+
+.side {
+  height: 95px;
+  line-height: 95px;
+  position: absolute;
+  text-align: center;
+  width: 95px;
+}
+
+.top {
+  background: #33cc54;
+  -webkit-transform: rotate(-45deg) skew(15deg, 15deg);
+          transform: rotate(-45deg) skew(15deg, 15deg);
+}
+
+.left {
+  background: #2db34a;
+  -webkit-transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+          transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+}
+
+.right {
+  background: #26973e;
+  -webkit-transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+          transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+}
+
+.scene {
+  width: 200px;
+  height: 200px;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  font-size: 2.5rem;
+  color: #010f01;
+}
+
+.cube-3d {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateZ(-100px);
+          transform: translateZ(-100px);
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+}
+
+.cube-3d:hover {
+  -webkit-transform: rotate3d(-2, -1, -1, -0.5turn);
+          transform: rotate3d(-2, -1, -1, -0.5turn);
+}
+
+.cube-face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cube-face-front {
+  background: rgba(255, 0, 255, 0.322);
+  -webkit-transform: rotateY(0deg) translateZ(100px);
+          transform: rotateY(0deg) translateZ(100px);
+}
+
+.cube-face-back {
+  background: rgba(172, 255, 47, 0.514);
+  -webkit-transform: rotateY(180deg) translateZ(100px);
+          transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube-face-right {
+  background: rgba(15, 31, 25, 0.589);
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+          transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube-face-left {
+  background: rgba(24, 37, 33, 0.548);
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+          transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube-face-top {
+  background: rgba(255, 127, 80, 0.589);
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+          transform: rotateX(90deg) translateZ(100px);
+}
+
+.cube-face-bottom {
+  background: rgba(218, 165, 32, 0.562);
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+          transform: rotateX(-90deg) translateZ(100px);
+}
+
+.cube-3d.show-front {
+  -webkit-transform: translateZ(-100px) rotateY(0deg);
+          transform: translateZ(-100px) rotateY(0deg);
+}
+
+.cube-3d.show-right {
+  -webkit-transform: translateZ(-100px) rotateY(-90deg);
+          transform: translateZ(-100px) rotateY(-90deg);
+}
+
+.cube-3d.show-back {
+  -webkit-transform: translateZ(-100px) rotateY(-180deg);
+          transform: translateZ(-100px) rotateY(-180deg);
+}
+
+.cube-3d.show-left {
+  -webkit-transform: translateZ(-100px) rotateY(90deg);
+          transform: translateZ(-100px) rotateY(90deg);
+}
+
+.cube-3d.show-top {
+  -webkit-transform: translateZ(-100px) rotateX(-90deg);
+          transform: translateZ(-100px) rotateX(-90deg);
+}
+
+.cube-3d.show-bottom {
+  -webkit-transform: translateZ(-100px) rotateX(90deg);
+          transform: translateZ(-100px) rotateX(90deg);
+}
+
+.radio-group {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+label {
+  margin-right: 10px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*# sourceMappingURL=style.css.map */
