@@ -1,0 +1,45 @@
+.mission{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    img{
+        // border: 2px solid red;
+        width: 20rem;
+    }
+    h2{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    p{
+        font-size: .8rem;
+        color: rgb(69,69,69);
+        margin-bottom: 1rem;
+    }
+    i{
+        margin-right: 2rem;
+        font-size: 2rem;
+    }
+}
+.all-cards{
+    background-color: rgb(248,249,250);
+    padding: 5rem;
+}
+.card{
+    background-color: white;
+    border-radius: 2rem;
+    img{
+        width: 100%;
+    }
+    h2{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-top: 2rem;
+    }
+    h3{
+        text-align: center;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+        color: $primary;
+    }
+}

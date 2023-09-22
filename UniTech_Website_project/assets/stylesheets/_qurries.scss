@@ -1,0 +1,162 @@
+@media screen and (max-width:1024px){
+    
+}
+
+@media screen and (max-width:576px) {
+    .container{
+        max-width: 540px;
+    }
+    html{
+        font-size: 10px;
+    }
+    .hero{
+
+        height: 30vh;
+        h1{
+            font-size: 2rem;
+        }
+
+    }
+    .bars{
+        font-size: 15px;
+        
+    }
+}
+@media screen and (max-width:368px){
+    .container{
+        max-width: 350px;
+    }
+    html{
+        font-size: 6px;
+    }
+    .hero{
+        height: 30vh;
+        h1{
+            font-size: 1rem;
+        }
+    }
+    .bars{
+        font-size: 12px;
+        
+    }
+}
+
+@media screen and(max-width:768px){
+    html{
+        font-size: 12px;
+    }
+    .sm-column{
+        flex-direction: column;
+    }
+    .container {
+        max-width: 720px;
+    }
+    .flex-wrap{
+        flex-wrap: wrap;
+    }
+    .sm-width-full{
+        flex: 0 1 100%;
+        // border: 2px solid red;
+    }
+    .clients{
+        img{
+            width: 10%;
+            overflow: hidden;
+        }
+    }
+    
+    .footer{
+        .details{
+            margin-bottom: 2rem;
+        }
+        h3{
+            color: white;
+        }
+        .nav-footer{
+            width: 20%;
+        }
+        
+    }
+    .industry{
+        img{
+            width: 100%;
+            margin: 0 auto;
+        }
+        p{
+            margin-bottom: 5rem;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    }
+    .request{
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        a{
+            margin: 0 auto;
+        }
+    }
+    .consulting-firm{
+        .team{
+            margin-bottom: 0;
+        }
+    }
+    .social-header{
+        .nav-one{
+            margin: 2rem auto;
+        }
+        .nav-two{
+            margin: 0 auto;
+        }
+    }
+    .nav-second{
+        display: none;
+    }
+    .nav-second{
+        li{
+            // border: 2px solid green;
+            margin: 16px;
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        a{
+            font-size: 2rem;
+            color: white;
+        }
+    }
+    #active{
+        background-color: skyblue;
+        padding: 0;
+    }
+    #toggle:checked ~ .nav-second{
+        display: inline-block;
+    }
+    .bars{
+        display: inline-block;
+        font-size: 24px;
+        color: black;
+        position: fixed;
+        right: 32px;
+        top: 16px;
+        z-index: 99;
+    }
+    .nav-second{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: skyblue;
+        padding-top: 120px;
+    }
+
+}
