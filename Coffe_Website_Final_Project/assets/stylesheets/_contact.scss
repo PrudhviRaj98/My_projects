@@ -1,0 +1,43 @@
+.contact{
+    // border: 2px solid violet;
+    background-color: rgb(228,228,228);
+    padding: 18rem;
+    .contact-details{
+        // border: 2px solid red;
+        h2{
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        // border: 2px solid red;
+        .form{
+            outline: 0;
+            padding: 0.8rem;
+            border-radius: 3rem;
+            margin-bottom: 1rem;
+            border: 2px solid $primary;
+            &:hover{
+                box-shadow: 3px 3px 6px 2px $primary;
+            }
+        }
+        .textarea{
+            // border-radius: 3rem;
+            border: 2px solid $primary;
+            outline: 0;
+            &:hover{
+                box-shadow: 3px 3px 6px 2px $primary;
+            }
+        }
+        a{
+            @extend %a
+        }
+    }
+    .map{
+        iframe{
+            border: 5px solid white;
+            border-radius: 1rem;
+            width: 100%;
+        }
+    }
+}

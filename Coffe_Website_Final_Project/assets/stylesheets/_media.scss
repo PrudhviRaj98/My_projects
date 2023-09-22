@@ -1,0 +1,122 @@
+@media screen and (max-width:768px){
+    html{
+        font-size: 10px;
+    }
+    .flex-30{
+        flex: 0 1 20%;
+    }
+    .sm-column{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .small-column{
+        flex-direction: column;
+    }
+    .sm-width-full{
+        flex: 0 1 100%;
+    }
+    .width{
+        width: 100%;
+    }
+    .flex-wrap{
+        flex-wrap: wrap;
+    }
+    // ........................................
+    // nav-bar
+    .bars{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size:3rem;
+        color: white;
+    }
+    .nav-bar ul{
+        display: none;
+    }
+    #toggle:checked ~ ul{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        z-index: 99;
+    }
+
+    .nav-bar a{
+        font-size: 44px;
+    }
+    .nav-bar ul li{
+        position: relative;
+        top: 40%;
+        // left: 50%;
+        text-align: center;
+    }
+    .cross{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: white;
+        font-size: 5rem;
+    }
+    
+    .container-2{
+        max-width: 720px;
+        width: 100%;
+        // border: 2px solid green;
+        .light{
+            left: 30rem;
+            // flex: 0 1 30%;
+            background-size: 100% 50%;
+            // width: 100%;
+            // border: 2px solid pink;
+        }
+        .table-set{
+            border: 2px solid red;
+            width: 100%;
+            // height: 100%;
+            background-size: 100% 100%;
+        }
+    }
+
+    .popular{
+        .item{
+            margin-bottom: 5rem;
+        }
+    }
+
+    .special-1, .special-2 , .special-3 , .special-4{
+        margin-bottom: 2rem;
+    }
+    .menu-items{
+        p, h2 {
+            text-align: center;
+            margin-top: 10rem;
+        }
+        h2{
+            padding-top: 1.5rem;
+        }
+        a{
+            margin: 0rem 0rem;
+        }
+    }
+    .menu-chart{
+        display: none;
+    }
+    .contact-details{
+        width: 100%;
+    }
+
+    .footer{
+        h2{
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+        a{
+            margin-bottom: 2rem;
+        }
+    }
+
+
+}

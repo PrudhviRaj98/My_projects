@@ -1,0 +1,112 @@
+.our-menus{
+    background-color: rgb(228,228,228);
+    padding: 3rem;
+    // height: 100vh;
+    // border: 2px solid violet;
+    .header-ourmenus{
+        margin-bottom: 4rem;
+            hr{
+                border-top: 2.5px solid $primary;
+                width: 70%;
+            }
+            h3{
+                font-family: $font-1;
+                font-size: 2.5rem;
+                color: $primary;
+                margin-left: 1rem;
+            }
+            img{
+                width: 2.5rem;
+            }
+    }
+}
+.menu-chart{
+    margin-top: 2rem;
+    // border: 2px solid red;
+    position: relative;
+    background-image: url(../img/vertical-menu-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 62vh;
+    width: 50%;
+    nav{
+        li{
+           margin-bottom: 0.2rem; 
+        }
+        ul{
+            position: absolute;
+            top: 0;
+            top: 0.2rem;
+            bottom: 0;
+            right: 0;
+            left: 2.4rem;
+        }
+        a{
+            font-size: 1.5rem;
+            color: #7c6a51;
+            &:hover{
+                color: $primary;
+                font-family: 'Open Sans', sans-serif;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+    
+}
+.card{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    // border: 2px solid yellow;
+    width: 100%;
+    background-color: white;
+    padding: 2em;
+    img{
+        width: 100%;
+    }
+    h2{
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+    p{
+        color: rgb(82,76,76);
+    }
+    .outer:hover{
+        transform: rotate(720deg);
+        transition: all 2s ease-in-out;
+        .inner-1{
+            border: 2px solid $primary;  
+        }
+        h4{
+            color: $primary;
+        }
+    }
+    .outer{
+        position: relative;
+        border-radius: 50%;
+        height: 7rem;
+        width: 7rem;
+        display: inline-block;
+        background-color: rgb(82,76,76);
+    }
+    .inner-1{
+        top: 0.5rem;
+        left: 0.5rem;
+        position: absolute;
+        border: 2px solid rgb(174,174,174);
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        display: inline-block;
+        // &:hover{
+        //     transform: rotate(360deg);
+        //     transition: all 2ms ease-in-out;
+        // }
+    }
+    h4{
+        position: absolute;
+        top: 1.2rem;
+        left: 1rem;
+        color: rgb(174,174,174);
+        font-size: 2rem;
+    }
+}
