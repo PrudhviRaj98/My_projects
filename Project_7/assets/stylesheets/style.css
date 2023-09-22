@@ -1,0 +1,394 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ............................................................ */
+/* custom-styles */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.body{
+    background-color: rgb(230,230,230);
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0;
+    background-color: white;
+}
+.container-2 {
+    width: 700px;
+    margin: 0 auto;
+}
+/* ................................. */
+header{
+    background-color: white;
+}
+.header-container{
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px 32px;
+}
+.nav-links li a{
+    font-weight: 700;
+    margin-left: 40px;
+    font-size: 13px;
+    color: rgb(9,9,9);
+}
+.nav-links .active{
+    color: rgb(105,198,186);
+}
+.hero{
+    height: 650px;
+    background: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../media/banner.jpg) no-repeat;
+    /* position: relative; */
+    background-size: cover;
+}
+.banner-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+.banner-subheading h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+   color: white;
+   text-align: center;
+}
+.heading{
+    font-weight: 700;
+    color: white;
+    font-size:35px;
+    text-align: center;
+}
+.dropdown{
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(105,198,186);
+    /* line-height: 40px; */
+}
+.dropdown i{
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+.banner-form{
+    margin-top: 120px;
+    padding: 20px 30px;
+    background-color: white;
+}
+.input-banner{
+    outline: 0;
+    border: none;
+}
+.form-1{
+    margin-top: 20px;
+    max-width: 50%;
+}
+.marginns-form-1{
+    margin-top: 70px;
+}
+.margins-banner  h2{
+    margin-bottom: 10px;
+}
+.margins-banner{
+    margin-bottom: 40px;
+}
+.margins-banner-form-2{ 
+    margin-bottom: 20px;
+}
+.select-2{
+    margin-left: 30px;
+}
+.new{
+    margin-bottom: 70px;
+}
+.headings-2{
+    font-size: 15px;
+    font-weight:bold;
+    margin-left: 40px;
+}
+.headings-1{
+    font-size: 15px;
+    font-weight: bold;
+}
+.check{
+    margin-left: 40px;
+    width: 320px;
+    background-color: rgb(105,198,186);
+    color: white;
+    padding: 20px;
+}
+.form-2{
+   max-width: 50%;
+}
+.section-2{
+    padding: 25px 0;
+    background-color: rgb(239,239,239);
+}
+.paras-sec-2{
+    text-align: center;
+}
+.paras-sec-2 h2 {
+    font-size: 25px;
+    color: rgb(39,43,47);
+    margin-bottom: 10px;
+}
+.paras-sec-2 p {
+    font-size: 10px;
+    color:rgb(122,123,125);
+    margin-bottom: 20px;
+}
+.conntinue{
+    background-color: rgb(105,198,186);
+    color: white;
+    outline: 0;
+    border: none;
+    padding: 10px 20px ;
+}
+strong{
+    font-weight: bold;
+}
+.europe{
+    width: 500px;
+    background-color: rgb(105,198,186);
+    padding: 40px 50px 40px 50px;
+    position: absolute;
+    color: white;
+}
+.europe-abs{
+    top: 130px;
+    left: 550px;
+}
+.europe h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.europe p {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+.image-europe img {
+    width: 600px;
+}
+.article-europe{
+    position: relative;
+}
+.caret-left{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)) ;
+    position: absolute;
+    color: white;
+    padding: 5px 10px;
+}
+.caret-left-1{
+    top: 210px;
+    left: 475px;
+}
+.caret-right {
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)) ;
+    padding: 5px 10px;
+    position: absolute;
+    color: white;
+    width: 30px;   
+}
+.caret-right-1 {
+    top: 210px;
+    left: 514px;
+}
+.europe-form input {
+    background-color: white;
+    color: rgb(105,198,186);
+    font-size: 10px;
+    padding: 10px 10px;
+}
+.image-asia img {
+    width: 600px;
+    margin-left: 605px;
+}
+.europe-asia{
+    background-color: rgb(198,105,149);
+    top: 100px;
+    left: 50px;
+}
+.caret-left-asia{
+    top: 190px;
+    left: 650px;
+}
+.caret-asia-right{
+    width: 20px;
+    top: 190px;
+    left: 690px;
+}
+.countries-maps{
+    padding: 0 20px 0 20px;
+    background-color:rgb(105,198,186) ;
+}
+.container-visit{
+    margin: 0 auto;
+    width: 930px;
+}
+.article-singapore{
+    margin-top: 50px;
+    width: 100%;
+    height: 180px;
+    box-shadow: 0 0 2px white;
+    background-color: white;
+}
+.article-sing-1{
+    display: flex;
+}
+.singapore{
+    width: 500px;
+    padding: 30px 20px 0 20px;
+}
+.singapore h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.singapore h3{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: rgb(217,156,185);
+}
+.singapore p {
+    font-size: 10px;
+    color: black;
+}
+.button-curve{
+    width: 150px;
+    background-color: rgb(105,198,186);
+}
+.button-head{
+    width: 100px;
+    font-size: 10px;
+}
+.button-head h2{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.button-head h3 {
+    font-size: 10px;
+    color: white;
+}
+.show-more{
+    margin-top: 30px;
+    text-align: center;
+}
+.show-more input{
+    padding: 10px 20px;
+    background-color: rgb(105,198,186);
+    color: white;
+}
+.map{
+    margin-top: 60px;
+    position: relative;
+}
+.map-form{
+    top: 100px;
+    right: 100px;
+    position: absolute;
+    width: 400px;
+    background: white;
+    padding: 20px;
+}
+.map-filed{
+    display: flex;
+    flex-direction: column;
+}
+.map-name{
+    padding: 10px 20px;
+    background-color:rgb(245,245,245) ;
+}
+.map-subject{
+    margin-bottom: 20px;
+}
+.map-submit{
+    color: white;
+    background-color:rgb(105,198,186) ;
+}
+.map-message{
+    height: 100px;
+}
+.footer {
+    background-color:rgb(105,198,186) ;
+}
+.footer-back{
+    width: 380px;
+    margin: 0 auto;
+    padding: 40px;
+}
+small{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
