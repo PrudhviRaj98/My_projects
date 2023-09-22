@@ -1,0 +1,510 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: 'PT Sans', sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html {
+  font-size: 16px;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align_center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify_center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+header {
+  padding: 1rem 0;
+  position: absolute;
+  top: 0;
+  left: 10rem;
+  width: 88%;
+}
+
+header h2 {
+  font-size: 2rem;
+}
+
+header input {
+  width: 0;
+}
+
+header .nav {
+  margin-left: 30rem;
+}
+
+header ul li {
+  margin-left: 3.5rem;
+}
+
+header ul li .home {
+  color: goldenrod !important;
+}
+
+header ul li a {
+  color: black;
+  font-weight: 600;
+}
+
+.item1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  background: url(../media/home-img.jpg) no-repeat;
+  height: 90vh;
+  background-size: cover;
+}
+
+.item2 {
+  padding: 2rem;
+  background-color: #f5e3d7;
+  grid-column: 3/-1;
+}
+
+.item2 h2 {
+  margin-top: 8rem;
+  color: #c2bab5;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.item2 h4 {
+  line-height: 1.3;
+  font-size: 1.7rem;
+  color: #474645;
+  margin-bottom: 1rem;
+}
+
+.item2 p {
+  color: #898582;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+.item2 a {
+  border: 3px solid black;
+  color: black;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 0.5rem 1.7rem;
+}
+
+.item3 {
+  background-color: white;
+  padding: 2rem;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.item3 h3 {
+  color: #626262;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.item3 h4 {
+  color: gold;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.item3 p {
+  color: #c2c2c2;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.about img {
+  width: 100%;
+  height: 100%;
+}
+
+.skills {
+  background-color: #ecaf4e;
+  padding: 3rem;
+}
+
+.skills h3 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.skills h4 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.skills h2 {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.skills progress {
+  font-size: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.cards {
+  padding: 2rem;
+  text-align: center;
+  background-color: #ecaf4e;
+}
+
+.cards i {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+.cards h2 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.cards p {
+  color: white;
+  line-height: 1.5;
+  font-size: 0.9;
+}
+
+.card-2 {
+  background-color: #fc683e;
+}
+
+.card-3 {
+  background-color: black;
+}
+
+.card-4 {
+  background-color: white;
+}
+
+.card-4 i {
+  color: black;
+}
+
+.card-4 h2 {
+  color: black;
+}
+
+.card-4 p {
+  color: black;
+}
+
+.experince {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.experince img {
+  width: 100%;
+  height: 60vh;
+}
+
+.my-experience {
+  grid-column: 3/-1;
+  background-color: #fc683e;
+  padding: 4rem;
+}
+
+.my-experience h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.my-experience h4 {
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.my-experience .exp i {
+  font-size: 2rem;
+  color: white;
+  margin-right: 1rem;
+}
+
+.my-experience .exp h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0.9rem;
+}
+
+.my-experience .exp h3 span {
+  color: #733334;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.my-experience .exp p {
+  font-size: 0.8rem;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+.back {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  background-color: #ecaf4e;
+}
+
+.edu {
+  grid-column: 3/-1;
+}
+
+.edu img {
+  width: 100%;
+  height: 60vh;
+}
+
+.contact {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  padding: 3rem;
+  background-color: #fc683e;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.contact p {
+  font-size: 0.8rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.contact input {
+  background-color: #fc683e;
+  outline: 0;
+  border: none;
+}
+
+.contact hr {
+  width: 100%;
+  background-color: yellow;
+  margin-bottom: 1rem;
+}
+
+.contact .message {
+  height: 15vh;
+}
+
+.contact a {
+  background-color: white;
+  padding: 0.5rem 2rem;
+  color: black;
+  border-radius: 5rem;
+}
+
+.contact .message-hr {
+  margin-bottom: 3rem;
+}
+
+.contact-img img {
+  width: 100%;
+  height: 65vh;
+}
+
+.contact-icons {
+  background-color: black;
+  padding: 2rem;
+}
+
+.contact-icons h2 {
+  font-size: 1.7rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.contact-icons p {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-icons h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.contact-icons i {
+  color: white;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.contact-icons h5 {
+  color: white;
+  font-size: 1rem;
+}
+
+.contact-icons h4 {
+  color: gold;
+  font-size: 1rem;
+}
+
+.contact-icons .margin {
+  margin-bottom: 2rem;
+}
+
+.map {
+  text-align: center;
+  padding: 4rem;
+  grid-column: 1/-1;
+  background-color: #fc683e;
+}
+
+.map iframe {
+  -webkit-box-shadow: 3px 3px 3px 3px black;
+          box-shadow: 3px 3px 3px 3px black;
+}
+
+.footer {
+  background-color: white;
+  padding: 5rem;
+  text-align: center;
+}
+
+.footer small {
+  font-size: 1rem;
+  color: #a4a4a4;
+}
+
+.footer span {
+  color: gold;
+}
+
+.footer nav {
+  margin: 4rem auto;
+  width: 150px;
+}
+
+.footer a {
+  color: #a4a4a4;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,250 @@
+<!-- - Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![CSS Grid Assignment II](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/css-grid/assignment-2/stimulus.png)
+
+#### Small Screen view(Below 768px)
+
+Find the small screen design in the assets folder.
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Pay attention to the codes, your code quality matters a lot.
+
+- Try to implement the layout as exactly as it has been provided in the design.
+
+- Pay attention to minor things like spacing, alignment, size, etc.
+
+- Use any font-family that suits better for the layout.
+
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/17bbe460ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container flex align_center justify_between">
+             <h2>Stimulus</h2>
+             <nav class="nav">
+                <ul class="ul home flex">
+                    <li><a class="home" href="">HOME</a></li>
+                    <li><a href="#aboutme">ABOUT ME</a></li>
+                    <li><a href="#experience">EXPERIENCES</a></li>
+                    <li><a href="">TESTIMONIAL</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+             </nav>
+        </div>
+     </header>
+    <main>
+        <section class=" container hero grid-container">
+            <div class="item1"></div>
+            <div class="item2">
+                <h2>Welcome to my website</h2>
+                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, corporis!</h4>
+                <p>Lorem ipsum dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut eligendi officiis reprehenderit culpa alias doloribus magni adipisci maxime consequuntur doloremque! amet consectetur adipisicing elit. Quisquam porro nam dolorem minima voluptatem placeat eum exercitationem odit dolores molestiae.</p>
+                <a href="#">Get Started</a>
+            </div>
+
+            <div class="item3">
+                <h3>lorem ipsum</h3>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsa!</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga pariatur odio praesentium cum. Nihil possimus laudantium quis dolorum dolores veritatis saepe necessitatibus excepturi tenetur ab quibusdam sed assumenda, perspiciatis asperiores?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga pariatur odio praesentium cum. Nihil possimus laudantium quis dolorum dolores veritatis saepe necessitatibus excepturi tenetur ab quibusdam sed assumenda, perspiciatis asperiores?</p>
+            </div>
+            <div class="about">
+                <img src="./assets/media/about-img.jpg" alt="">
+            </div>
+            <div class="skills">
+                <h3>My Skills</h3>
+                <h4>Photoshop, HTML CSS JS, Web Design</h4>
+                <div>
+                    <div class="flex-all">
+                        <h2>Front Design</h2>
+                        <strong>52%</strong>
+                    </div>
+                    <progress id="file" value="52" max="100"> 32% </progress>
+                </div>
+                <div>
+                    <div class="flex-all">
+                        <h2>Backend processing</h2>
+                        <strong>72%</strong>
+                    </div>
+                    <progress id="file" value="72" max="100"> 32% </progress>
+                </div>
+                <div>
+                    <div class="flex-all">
+                        <h2>HTML & CSS3</h2>
+                        <strong>22%</strong>
+                    </div>
+                    <progress id="file" value="22" max="100"> 32% </progress>
+                </div>
+            </div>
+
+            <div class="cards">
+                <i class="fas fa-desktop"></i>
+                <h2>Interface Design</h2>
+                <p>Lorem ipsum eveniet suscipit consequatur. Magni praesentium veniam quidem ex beatae incidunt quae!</p>
+            </div>
+
+            <div class="cards card-2">
+                <i class="fab fa-telegram-plane"></i>
+                <h2>Media Strategy</h2>
+                <p>Lorem ipsum eveniet suscipit consequatur. Magni praesentium veniam quidem ex beatae incidunt quae!</p>
+            </div>
+
+            <div class="cards card-3">
+                <i class="fas fa-mobile-alt"></i>
+                <h2>Mobile App</h2>
+                <p>Lorem ipsum eveniet suscipit consequatur. Magni praesentium veniam quidem ex beatae incidunt quae!</p>
+            </div>
+
+            <div class="cards card-4">
+                <i class="fab fa-html5"></i>
+                <h2>Coding</h2>
+                <p>Lorem ipsum eveniet suscipit consequatur. Magni praesentium veniam quidem ex beatae incidunt quae!</p>
+            </div>
+            <div class="experince">
+                <img src="./assets/media/experience-img.jpg" alt="">
+            </div>
+            <div class="my-experience">
+                <h2>My Experinces</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nesciunt.</h4>
+                <div class="flex exp">
+                    <div>
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div>
+                        <h3>Graphic Designers <span>2014 Jul - 2015 Sep</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, rerum?</p>
+                    </div>
+                </div>
+                <div class="flex exp">
+                    <div>
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div>
+                        <h3>Web Designers <span>2014 Jul - 2015 Sep</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, rerum?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-experience back">
+                <h2>My Experinces</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nesciunt.</h4>
+                <div class="flex exp">
+                    <div>
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div>
+                        <h3>Graphic Designers <span>2014 Jul - 2015 Sep</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, rerum?</p>
+                    </div>
+                </div>
+                <div class="flex exp">
+                    <div>
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div>
+                        <h3>Web Designers <span>2014 Jul - 2015 Sep</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, rerum?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu">
+                <img src="./assets/media/education-img.jpg" alt="">
+            </div>
+
+            <div class="contact">
+                <h2>Say Hello</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, tempore.</p>
+                <div class=" flex column">
+                    <input type="text" name="Your Name" placeholder="Your Name">
+                    <hr>
+                    <input type="text" placeholder="Email">
+                    <hr>
+                    <input class="message" type="text" placeholder="Message">
+                    <hr class="message-hr">
+                </div>
+                <a href="#">Send Message</a>
+            </div>
+
+            <div class="contact-img">
+                <img src="./assets/media/contact-img.jpg" alt="">
+            </div>
+            <div class="contact-icons">
+                <h2>Visit my office</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>Contact</h3>
+
+                <div class="flex margin">
+                    <i class="fas fa-phone-alt"></i>
+                    <h5>0100292934</h5>
+                </div>
+                <div class="flex margin">
+                    <i class="far fa-envelope"></i>
+                    <h4>prudhvi@gmail.com</h4>
+                </div>
+                <div class="flex margin">
+                    <i class="fas fa-globe-europe"></i>
+                    <h4>compnay.co</h4>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.919684030994!2d76.35140991501416!3d32.20639478114801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1622301026170!5m2!1sen!2sin" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+</body>
+<footer class="footer">
+    <small>Copyright &copy; 2020 Your company | design: <span>templatemo</span> </small>
+    <nav>
+        <ul class="flex justify-between">
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fas fa-basketball-ball"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+</html>
