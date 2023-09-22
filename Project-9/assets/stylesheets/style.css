@@ -1,0 +1,578 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ..................................... */
+html{
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+input,button{
+    box-shadow: none;
+    outline: 0;
+    border: 0;
+}
+body{
+    line-height: 1.2;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    /* width: 100%; */
+    padding: 1rem 4rem;
+    /* border: 2px solid red; */
+}
+.flex{
+    display: flex;
+}
+.flex_100{
+    flex: 0 1 100%;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-end{
+    align-items: flex-end;
+}
+.flex_23{
+    flex: 0 1 23%;
+    /* border: 1px solid red; */
+}
+.flex_48{
+    flex: 0 1 46%;
+}
+.justify-center{
+    justify-content: center;
+}
+.flex-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.width-full{
+    width: 100%;
+}
+/* ............................................... */
+
+.top-ul{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    color: white; 
+}
+.logo{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.head-div{
+    background-color: rgb(89,191,194);
+    display: flex;
+    justify-content: space-between;
+}
+/* ...................................... */
+/* hero-section */
+.hero{
+    background-color: rgb(89,191,194);
+    max-height: 65vh;
+    margin-bottom: 8rem;
+    
+}
+.title{
+    max-width: 400px;
+    /* border: 2px solid pink; */
+    margin: 0 auto;
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.hero-div{
+    max-width: 750px;
+    margin: 20px auto;
+    /* border: 2px solid green; */
+    height: 80vh;
+    text-align: center;
+}
+.hero-div img{
+    /* border: 2px solid pink; */
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0px 30px 12px -12px rgb(177, 172, 172);
+}
+.nav-bar{
+    margin-bottom: 2rem;
+}
+.btn-hero{
+    font-weight: 600;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(87,102,144);
+}
+.file span{
+    margin-left: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(199,208,229);
+    font-size: 1.1rem;
+}
+.file img{
+    width: 20px;
+}
+.line{
+    border: 1px solid rgb(199,208,229);
+    background-color:rgb(199,208,229) ;
+    width: 100%;
+    /* margin-top: 2rem; */
+}
+.files-div{
+    /* border: 2px solid green; */
+    margin-top: 12rem;
+}
+/* ............................................ */
+/* score */
+.score-stats{
+    /* width: 50%; */
+    margin-top: 30px;
+}
+.score-stats img{
+    width: 100%;
+}
+.learning-div{
+    /* border: 2px solid black; */
+    /* max-width: 44%; */
+    margin-top: 30px;
+}
+.learning-div h2{
+    color: rgb(40,62,125);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.learning-div p{
+    color: rgb(122,140,181);
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.learn-more{
+    background-color: rgb(89,191,194);
+    padding: 5px 15px;
+    font-size: 15px;
+    color: white;
+    position: relative;
+    clip-path: polygon(88% 0, 100% 50%, 87% 99%, 0% 100%, 10% 47%, 0% 0%);
+
+}
+
+/* ................................................ */
+.table-container{
+    width: 100%;
+}
+.table-container h2{
+margin-top: 40px;
+font-size: 2rem;
+font-weight: 800;
+text-align: center;
+color: rgb(40,62,125);
+}
+
+.table-container table {
+margin: 40px auto;
+width: 100%;
+border-radius: 40px;
+border: 1px solid green;
+}
+
+table,
+tr,
+td,
+th {
+border: 1px solid rgb(229,229,229);
+color: rgb(117,119,126);
+}
+
+td,
+th {
+padding: 10px 60px 10px 20px;
+}
+
+
+tr:first-child td, tr:first-child th {
+color: #fff;
+border: none;
+}
+
+tr:nth-child(2n + 1) {
+background: rgb(213,229,229);
+}
+
+tr:first-child {
+background: rgb(89,191,194);
+font-size: 1.5rem;
+}
+/* ....................................... */
+.outer{
+    width: 50px;
+    height: 20px;
+    border-radius: 40px;
+    background-color: rgb(187,236,236) ;
+    position: relative;
+}
+.inner{ 
+    text-align: center;
+    color: white;
+    left: 3px;
+    top: 2px;
+    position: absolute;
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    background-color: rgb(89,191,194);
+}
+.sub-bar{
+    width: 300px;
+    /* border: 2px solid red; */
+}
+.sub-bar h2{
+    text-align: center;
+    color: rgb(43,64,127);
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.sub-switch{
+    margin:  0 auto;
+    width: 200px;
+}
+.sub-switch h3, h4{
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+}
+/* .............................................. */
+/* plans */
+.basic-plan{
+    margin-top: 50px;
+    border: 4px solid rgb(232,238,251);
+    border-radius: 20px;
+    padding: 20px;
+}
+.basic-plan h2{
+   color: rgb(40,62,125);
+   font-weight: 800;
+   font-size: 1.5rem;
+   text-align: center;
+   margin-bottom: 10px;
+   margin-top: 20px;
+}
+.basic-plan p {
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(117,136,179);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.price{
+    padding: 0;
+    
+    width: 160px;
+    margin:  0 auto;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+.price h3{
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(89,191,194);
+    font-size: 1.5rem;
+}
+.price h4{
+    text-align: center;
+    color: rgb(89,191,194);
+    font-weight: 600;
+    font-size: 3rem;
+    margin-left: 10px;
+}
+.price h5{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: rgb(108,129,174);
+}
+.selected h3{
+    font-size: 700;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: rgb(76,90,130);
+}
+.cross{
+    color: rgb(115,135,178);
+    font-size: 1rem;
+    margin-top: 20px;
+}
+.selected img{
+    margin-right: 10px;
+}
+.btn-get{
+    margin-top: 3rem;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid rgb(208,219,243);
+    color: rgb(66,85,140);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+}
+/* .................................... */
+.started {
+    padding-top: 4rem;  
+  }
+  .get-started {
+      flex-direction: column;
+      padding: 3rem;
+      background: rgb(89,191,194);
+      border-radius: 20px;
+  }
+  .get-started h2 {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: #fff;
+      text-align: center;
+  }
+  .btn-started{
+      text-align: center;
+      border: 2px solid white;
+      max-width: 100px;
+      padding: 10px 50px;
+      margin: 0 auto;
+      border-radius: 5px;
+      background-color: white;
+      margin-top: 30px;
+      color: rgb(66,85,140);
+      font-weight: 600;
+
+  }
+  /* ................................................. */
+/* footer */
+
+.footer {
+    margin-top: 3rem;
+    padding: 3rem auto;
+    color: rgb(115,135,178);
+}
+.footer a {
+    color: rgb(115,135,178);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+.brand-container {
+    width: 30%;
+    /* border: 2px solid red; */
+}
+.brand-container p{
+    font-size: 1rem;
+    font-weight: 500;
+    word-spacing: 1px;
+}
+.footer h3 {
+    font-size: 1.4rem;
+    color: rgb(40,62,125);
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+.social li a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: rgb(89,191,194);
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+.social li a i {
+    color: #fff;
+} 
+
+input{
+    width: 0;
+}
+.bars{
+    display: none;
+}
+.cros{
+    display: none;
+}
+/* ........................................................... */
+/* media-querys */
+
+@media screen and (max-width:768px){
+    html{
+        font-size: 12px;
+    }
+    .bars ,.cros{
+        font-size: 1.5rem;
+        display: block;
+    }
+    .top-ul{
+        display: none;
+    }
+    #toggle:checked ~ .top-ul{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgb(71, 247, 36);
+    }
+    .top-ul li{
+        position: relative;
+        top: 40%;
+        left: 48%;
+        color: black;
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+    .cros{
+        position: absolute;
+        right: 5rem;
+        top: 3rem;
+        font-size: 3rem;
+    }
+
+    .conntainer{
+        width: 90%;
+    }
+    .flex_23{
+        flex: 0 1 48%;
+        margin-top: 2rem;
+        /* border: 1px solid green; */
+    }
+    .flex_48{
+        flex: 0 1 100%;
+        /* border: 1px solid green; */
+    }
+
+    .flex_wrap{
+        flex-wrap: wrap;
+    }
+    .column{
+        flex-direction: column;
+    }
+
+    .learning-div{
+        padding: 5rem 5rem;
+    }
+    .hero{
+        height: 50vh;
+    }
+    .hero-div{
+
+        margin-top: 10rem;
+    }
+    .table-container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    html{
+        font-size: 10px;
+    }
+    .flex_23, .flex_48{
+        /* border: 1px solid red; */
+        flex: 0 1 100%;
+        padding: 0;
+    }
+
+    .monitor{
+        width: 100%;
+    }
+    .table-container {
+        width: 80%;
+        /* border: 1px solid red; */
+    }
+    table{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    td,
+    th {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0.3rem;
+    }
+    .letUs{
+        width: 90%;
+        /* border: 1px solid red; */
+        margin: auto;
+    }
+    .letUs .sub-bar{
+        width:60%;
+    }
+}
