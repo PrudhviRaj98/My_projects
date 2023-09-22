@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ........................................... */
+/* custom-styles */
+body {
+    background-color: rgb(29,32,41);
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+} 
+.padding-header{
+    padding-top: 20px;
+}
+.flex1 {
+    display: flex;
+    justify-content: space-between;
+}
+.flex {
+    display: flex;
+}
+.heading h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+.heading h2 {
+    color: rgb(137,143,178);
+    font-weight: bold;
+}
+.darkmode h2 {
+    color: rgb(150,157,192);
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+.outer-circle {
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(to right, rgb(60,142,204),rgb(63,202,152));
+    border-radius: 25px;
+    overflow: hidden;
+}
+.inner-circle {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(37,43,65);
+}
+/* ........................................... */
+/* section-1 */
+.section-1 {
+    margin-top: 40px;
+}
+.box1 {
+    background-color:rgb(37,43,67) ;
+    width: 250px;
+    height: 220px;
+    border-top: 5px solid rgb(25,143,245);
+    border-radius: 5px;
+}
+.nav-text {
+    margin: 0 auto;
+    width: 180px;
+    margin-top: 20px;
+}
+.box-1-nav a i {
+    color:rgb(16,144,248) ;
+    
+    font-size: 30px;
+    margin-left: 20px; 
+}
+.h2-box1 {
+    color: rgb(100,108,141);
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.subheading-box h2 {
+    font-size: 65px;
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    
+}
+.subheading-box h3 {
+    color:rgb(99,106,136) ;
+    letter-spacing: 5px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+}
+.box-green {
+    padding-left: 50px;
+}
+.box-green h2 {
+    font-size: 15px;
+    color: rgb(54,148,133);
+    font-weight: bold;
+    margin-left: 5px;
+}
+.box-green i {
+    color: rgb(54,148,133);
+    margin-top: 4px;
+ }
+/* ........................  */
+/* section-3 */
+.flex3 {
+    display: flex;
+    flex-direction: column;
+}
+.box3 {
+    background-color:rgb(37,43,67) ;
+    width: 250px;
+    height: 220px;
+}
+.border-3 {
+    width:250px ;
+    height: 7px;
+    background: linear-gradient(rgb(247,166,110),rgb(231,95,140));
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.subheading-box-3  h2{
+    font-size: 65px;
+    color: white;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.subheading-box-3 h3 {
+    color:rgb(99,106,136) ;
+    letter-spacing: 5px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.box-green-3 {
+    padding-left: 80px;
+}
+.box-green-3 h2 {
+    font-size: 15px;
+    color: rgb(54,148,133);
+    font-weight: bold;
+    margin-left: 5px;
+}
+.box-green-3 i {
+    color: rgb(54,148,133);
+    margin-top: 4px;
+}
+/* ............................... */
+/* box-4 */
+.border-4 {
+    width:250px ;
+    height: 7px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(194,4,42);
+}
+.subheading-box-4 h2 {
+    font-size: 65px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.subheading-box-4 h3 {
+    color:rgb(99,106,136) ;
+    letter-spacing: 5px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.box-green-4{
+    padding-left: 80px;
+}
+.box-green-4 i {
+    color: rgb(166,69,84);
+}
+.box-green-4 h2 {
+    font-size: 15px;
+    color: rgb(166,69,84);
+    font-weight: bold;
+    margin-left: 5px;
+}
+/* .............................. */
+/* smalbox */
+.container-1 {
+    padding: 0 20px 0 20px ;
+}
+.small-box {
+    width: 210px;
+    height: 120px;
+    background-color: rgb(37,43,67);
+    border-radius: 5px;
+}
+.heading-small h2 {
+    color: rgb(135,142,186);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.heading-small a i {
+    font-size: 30px;
+    color:rgb(16,144,248) ;
+    margin-top: 15px;
+}
+.heading-2-small {
+    margin-top: 20px;
+}
+.heading-2-small h2 {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+.link-small h3{
+    color: rgb(49,134,123);
+    font-size: 15px;
+    margin-left: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.link-small i {
+    color:rgb(49,134,123) ;
+    margin-top: 23px;
+}
+.link-small-2 i {
+    
+    color:rgb(177,76,97) ;
+    margin-top: 20px;
+}
+.link-small-2  h3{
+    color: rgb(177,76,97);
+    font-size: 15px;
+    margin-left: 5px;
+    font-weight: bold;
+    margin-top: 22px;
+}
+

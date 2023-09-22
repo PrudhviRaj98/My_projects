@@ -1,0 +1,34 @@
+{
+  "name": "",
+  "displayName": "",
+  "descriptionURL": "https://github.com/AltCampus/AC-STYLE-background-and-gradients-THaaag/tree/master/Ex3-assignment-level-2-EHaabf/block-01-BHaabv/index.md",
+  "uniqueCode": "BHaabv",
+  "type": "writeCode",
+  "level": 1,
+  "contentType": "csb",
+  "automatedFeedback": "",
+  "githubBranchName": "block-BHaabv",
+  "openFile": "./block-BHaabv",
+  "isTestable": false,
+  "estimatedTimeToComplete": 0,
+  "isPotentialInterviewQuestion": false,
+  "quizOptions": {
+    "a": "",
+    "b": "",
+    "c": "",
+    "d": ""
+  },
+  "quizCorrectAnswerOptions": [],
+  "correctAnswerExplanation": "",
+  "todo": {
+    "isReviewed": false,
+    "isAssignmentDone": true,
+    "shouldSplitBlock": false,
+    "actionsRequired": [{
+      "videoId": "",
+      "scrimbaId": "",
+      "type": "toVideo",
+      "topic": ""
+    }]
+  }
+}
