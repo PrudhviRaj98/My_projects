@@ -1,0 +1,335 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ........................................ */
+/* custom-styles */
+.container {
+	margin: 0 auto;
+	width: 1300px;
+}
+.flex {
+	display: flex;
+}
+.header {
+	background:linear-gradient(to right, rgba(32,126,220,0.5),rgb(118,230,114,0.5)), url(../media/home-bg.jpg) no-repeat ;
+	height:700px ;
+	background-size: 100% 100%;
+}
+.sign-in {
+	margin-left: 100px;
+	padding-top: 10px;
+}
+.sign-in span{
+	background-color:rgb(207,55,50) ;
+	border-radius: 20px;
+	padding: 10px 20px;
+	color: white;
+}
+.margins {
+	padding-top: 30px;
+	height: 500px;
+}
+h1 {
+	font-size: 35px;
+	color: white;
+}
+.nav-tags {
+	margin-left: 150px;
+	padding-top: 10px;
+}
+.nav-tags a {
+	margin-left: 30px;
+	text-decoration: none;
+	color: white;
+}
+.social-media-tags {
+	padding-top: 10px;
+	margin-left: 300px;
+}
+.social-media-tags a i {
+	margin-left: 30px;
+	color: white;
+}
+.sub-header {
+	margin-top: 200px;
+	width: 450px;
+}
+.sub-header h2 {
+	font-weight: 400;
+	font-size: 45px;
+	color: white;
+	line-height: 1.2;
+}
+.start-project {
+	border: 2px solid white;
+	border-radius: 20px;
+	padding: 10px 20px;
+	color: white;
+	margin-top: 30px;
+}
+.call-us {
+	color: white;
+	margin-top: 35px;
+	margin-left: 30px;
+}
+.vedio {
+	margin-left: 200px;
+	margin-top: 150px;
+}
+.box {
+	width: 10px;
+	height: 10px;
+	margin-left: 5px;
+	background-color: grey;
+}
+.let-us-intro {
+	width: 500px;
+}
+.small-boxes {
+	padding-top: 5px;
+	padding-bottom: 20px;
+	margin-left: 620px;
+	margin-bottom: 30px;
+}
+.let-us-intro h2{
+	color: rgb(70,70,70);
+	font-size: 25px;
+	margin-top: 100px;
+	font-weight: bold;
+}
+.let-us-intro h3, h4 {
+	line-height: 1.5;
+	font-size: 16px;
+	color: rgb(143,143,143);
+}
+.let-us-intro h4 {
+	margin-top: 10px;
+}
+.progress {
+	width: 300px;
+	height: 5px;
+	background-color: rgb(30,30,30);
+	border-radius: 2px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.progress-bars {
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+.about-image img {
+	width: 400px;
+	height: 350px;
+	margin-top: 50px;
+	margin-left: 100px;
+}
+.our h2{
+	font-size: 35px;
+	margin-left: 590px;
+	margin-bottom: 10px;
+	padding-top: 60px;
+
+}
+.section-2 {
+	background-color: rgb(239,239,239);
+}
+.row {
+	margin-bottom: 30px;
+}
+.box-container {
+	padding-right: 10px;
+	padding-top: 80px;
+	padding-bottom: 15px;
+}
+.box-1{
+	
+	background-color: white;
+	width: 600px;
+	height: 350px;
+	margin-left: 30px;
+}
+.box-1 img {
+	width: 200px;
+	height: 350px;
+}
+.read-article {
+	background-color: rgb(239,239,239);
+	border-radius: 25px;
+	padding: 15px;
+	display: inline-block;
+}
+
+.heading-section-2 h2, i {
+	font-size: 15px;
+	color: rgb(215,87,87);
+	margin-left: 5px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.margin-bottom {
+	padding-bottom: 100px;
+}
+.box-container h3 {
+	font-size: 35px;
+	color: black;
+	word-spacing: -2px;
+	margin-bottom: 10px;
+}
+.box-container h4 {
+	margin-bottom: 20px;
+}
+.our-work {
+	margin-left: 10px;
+	padding-bottom: 60px;
+}
+.our-work-section-3 img {
+	width: 280px;
+	height: 200px;
+	margin-left: 30px;
+}
+.our-work-section-4 img {
+	width: 280px;
+	height: 200px;
+	margin-left: 30px;
+}
+.background-section-4 {
+	background:linear-gradient(to right, rgb(32,126,220),rgb(118,230,114)) ;
+	height: 600px;
+
+}
+.contact-col{
+	width: 300px;
+	background-color: white;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-right: 30px;
+	padding: 15px;
+}
+.contact-col span {
+	color: grey;
+}
+.your-req {
+	color: grey;
+	background-color: white;
+	width: 660px;
+	height: 150px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+.send-message {
+	background-color: rgb(207,55,50);
+	border-radius: 25px;
+	padding: 15px 35px;
+	display: inline-block;
+	color: white;
+}
+.map iframe {
+	border-radius: 50%;
+	margin-left: 100px;
+}
+.margin-contact {
+	margin-left: 30px;
+}
+.contact h2 {
+	color: white;
+	margin-left: 570px;
+}
+.backgroud-last {
+	
+	background: linear-gradient(to right,rgb(61,61,61),rgb(11,11,11));
+	height: 400px;
+}
+.margin-last {
+	padding-top: 80px;
+	margin-bottom: 90px;
+}
+.headings-last{
+	width: 400px;
+	margin-left: 20px;
+}
+.headings-last  h2{
+	margin-bottom: 15px;
+	color: white;
+	font-size: 35px;
+}
+.headings-last p {
+	line-height: 1.5;
+	color: rgb(171,171,171);
+}
+.all-sub-last {
+	margin-bottom: 15px;
+	font-size: 35px;
+	color:white;
+	margin-left: 100px;
+}
+.ul li {
+	margin-left: 100px;
+	margin-bottom: 5px;
+	color: rgb(171,171,171);
+}
+hr {
+	margin-bottom: 40px;
+}
+small {
+	color: rgb(156,156,156);
+	margin-left: 30px;
+}
+.footer h2 {
+	margin-left: 500px;
+	color: rgb(156,156,156);
+}
+.last-social-media-tags{
+	margin-left: 50px;
+}
+.last-social-media-tags a i {
+	color: white;
+	margin-left: 20px;
+}
